@@ -1,10 +1,12 @@
 :root {
-    --orange: #f86a6a;
-    --blue: #2e3f99;
-    --blue-dark: #576fb5;
-    --blue-light: #96a9d7;
-    --blue-lighter: #d1d9ee;
-    --gray: #888888;
+    --pink: #E65C91;
+    --main: #5a17ee;
+    --main-shade: #6A2EEF;
+    --darker: rgb(77, 77, 77);
+    --turquoise: #4ae2e8;
+    --main-lighter: #a4fcff;
+    --white: #ffffff;
+    --gray: #888888; 
 }
 html,
 body {
@@ -15,342 +17,435 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/*** Buttons ***/
-#header-section .main-menu .navbar-nav .nav-btn {
-    background: var(--orange);
-    color: #fff;
-    border-radius: 90px;
-    padding: .5rem 1.5rem;
+/* 
+* Globals
+*/
+.spacing {
+    padding-top: 100px;
+    padding-bottom: 100px ;
 }
-#header-section .main-menu .navbar-nav .nav-btn:hover,
-button.orange-button:hover {
-    background: var(--blue);
-    color: #fff;
-    transition: ease 0.5s;
-}
-.button:focus {
-    box-shadow: none;
-}
-.site-main .site-banner .site-title button.primary-button {
-    background: var(--blue-lighter);
-    color: var(--orange);
-    padding: 0 1.2rem;
-    min-width: 50px;
-    border-radius: 100%;
-}
-button.orange-button {
-    padding: .8rem 1.5rem;
-    position: relative;
-    border-radius: 100px;
-    background: var(--orange);
-    color: #fff;
-}
-button.blue-button {
-    padding: .8rem 1.5rem;
-    position: relative;
-    border-radius: 100px;
-    background: var(--blue);
-    color: #fff;
-}
-button.blue-button:hover {
-    background: var(--orange);
-    color: #fff;
-    transition: ease 0.5s;
-}
-/*** End Buttons ***/
-
-/*** Navegation ***/
-#header-section .main-menu .navbar {
-    padding: 0;
-}
-#header-section .main-menu .navbar-nav .active a {
-    color: var(--orange);
-}
-#header-section .main-menu .navbar-nav a:hover {
-    color: var(--orange);
-}
-/*** End Navegation ***/
-
-
-/*** Banner Section ***/
-.bg {
-    background: url(../img/home-banner.png) no-repeat;
-}
-.site-main .site-banner .site-title h3 {
-    font-weight: 400;
-    color: var(--blue);
-}
-.site-main .site-banner .site-title h1 {
-    font-size: 6.25rem;
-    font-weight: 500;
-    color: var(--orange);
-}
-.site-main .site-banner .site-title p {
-    color: var(--gray);
-}
-.site-main .site-banner .banner-img img {
-    padding-top: 10%;
-}
-/*** End Banner Section ***/
-
-
-/*** Cards Section ***/
-#card-section {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-#card-section .card,
-#how-works .card,
-#pricing-section .card.basic-plan,
-#pricing-section .card.premium-plan {
+.card {
     border-color: #eeeded;
     box-shadow: 4.871px 34.659px 30px 0px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
 }
-#card-section .card .card-body {
-    margin: 2rem;
-}
-#card-section .card .card-body i {
-    color: var(--blue-light);
-    padding-bottom: 2.5rem;
-}
-#card-section .card .card-title,
-#features-section .card .card-title,
-#how-works .card .card-title {
-    color: var(--blue);
-}
-.card .card-text {
-    color: var(--blue-dark);
-}
-.card a {
-    color: var(--orange);
-}
-/*** End Cards Section ***/
-
-
-/*** About Section ***/
-#about-section {
-    background: url(../img/bg-about.png);
-}
-#about-section .container {
-    padding: 100px;
-}
-#about-section img {
-    width: 50%;
-}
 .small-title {
-    color: var(--orange);
+    color: var(--pink);
     font-weight: 400;
 }
-.main-title,
-.title-profession {
-    color: var(--blue);
+.main-title {
+    color: var(--main);
 }
-.about-paragraph {
-    color: var(--gray);
-    padding-top: 5%;
+.gray-text {
+    color: var(--darker);
 }
-/*** End About Section ***/
+.card .card-title {
+    color: var(--main);
+}
+.card .card-text {
+    color: var(--darker);
+}
+/* End Globals */
 
 
-/*** How Works Section ***/
-#how-works .container {
-    padding: 80px;
+/* 
+* Buttons
+*/
+#header-section .main-header .nav-link.pink-btn {
+    background: var(--white);
+    text-align: center;
+    color: var(--main);
+    border-radius: 90px;
+    padding: .5rem 1.5rem;
+    font-weight: 500;
 }
-#how-works i {
-    color: var(--orange);
+#header-section .main-header .nav-link.pink-btn:hover,
+button.pink-button:hover,
+button.pink2-button:hover {
+    background: var(--turquoise);
+    color: var(--white);
+    transition: ease 0.5s;    
 }
-/*** End How Works Section ***/
+.button:focus {
+    box-shadow: none;
+}
+#site-banner .banner-title button.primary-button {
+    background: var(--main-shade);
+    color: var(--white); 
+    padding: 0 1.2rem;
+    border-radius: 90px;
+}
+#site-banner .banner-title button.primary-button:hover {
+    background: var(--turquoise);
+}
+button.pink-button {
+    position: relative;
+    background: var(--white);
+    color: var(--main);      
+    padding: .8rem 1.5rem;
+    border-radius: 90px;
+    font-weight: 500;
+}
+button.blue-button {
+    position: relative;
+    background: var(--main);
+    color: #fff;
+    padding: .8rem 1.5rem;
+    border-radius: 90px;
+}
+button.blue-button:hover {
+    background: var(--pink);
+    color: #fff;
+    transition: ease 0.5s;
+}
+button.pink2-button {
+    background: var(--pink);
+    color: #fff;
+    padding: .8rem 1.5rem;
+    border-radius: 90px;
+}
+/* End Buttons */
 
 
-/*** Features Section ***/
+/* 
+* Navegation
+*/
+#header-section .main-header .navbar {
+    padding: 0;
+}
+#header-section .main-header .navbar-nav a {
+    color: var(--white);
+}
+#header-section .main-header .navbar-nav .active a {
+    color: var(--pink);
+}
+#header-section .main-header .navbar-nav a:hover {
+    color: var(--pink);
+}
+/* End Navegation */
+
+
+/* 
+* Banner Section
+*/
+#banner-bg {
+    background: var(--main);
+    min-height: 600px;
+}
+#site-banner .banner-title h3 {
+    font-weight: 400;
+    color: var(--white);
+}
+#site-banner .banner-title h1 {
+    color: var(--white);
+    font-size: 4.25rem;
+}
+#site-banner .banner-title p {
+    color: var(--white);
+}
+#site-banner .banner-title {
+    padding-top: 30%;
+}
+#site-banner .banner-img {
+   display: none;
+}
+/* End Banner Section */
+
+
+/* 
+* Main Card Section 
+*/
+#card-section {
+    /* margin-top: -5rem; */
+    padding: 0;
+    /* margin-bottom: 150px; */
+}
+#card-section .card .card-body i {
+    color: var(--main);
+}
+#card-section .card a {
+    color: var(--pink);
+}
+/* End Card Section */
+
+
+/* 
+* About Section 
+*/
+#about-section {
+    background: url(../img/small-first.png) no-repeat;
+    width: 100%;
+}
+.profession-title {
+    color: var(--darker);
+}
+/* End About Section */
+
+
+/* 
+* How Works Section 
+*/
+#how-works .card i {
+    color: var(--pink);
+}
+/* End How Works Section */
+
+
+/* 
+* Feature Section 
+*/
 #features-section {
-    background: url(../img/bg-about.png);
-}
-#features-section .container {
-    padding: 100px;
+    background: url(../img/small-second.png);
+    
 }
 #features-section .card {
-    background: var(--blue-lighter);
+    background: var(--main-lighter);
     border: none;
-    box-shadow: 4.871px 34.659px 30px 0px rgba(0, 0, 0, 0.06);
-    border-radius: 10px;
 }
-#features-section .card-body {
-    padding: 1.25rem 1rem;
-}
-#features-section .card-body i {
+#features-section .card i {
     color: #fff;
 }
 #features-section .card-body .card-title {
     text-decoration: underline;
-    text-decoration-color: var(--orange);
+    text-decoration-color: var(--pink);
 }
-/*** End Features Section ***/
+/* End Feature Section */
 
 
-/*** Pricing Section ***/
-#pricing-section .container {
-    padding: 100px;
-}
-#pricing-section .basic-plan,
-#pricing-section .basic-plan h1 .period {
-    color: var(--blue);
-}
-#pricing-section .basic-plan h1 {
-    color: var(--orange);
-} 
-#pricing-section .premium-plan {
-    background: var(--blue);
-    color: #fff;;
-}
-#pricing-section .premium-plan hr {
-    background: #eeeded;
-}
-#pricing-section .premium-plan hr {
-    background: #eeeded;
-}
-#pricing-section .premium-plan .white-button {
-    padding: .8rem 1.5rem;
-    border-radius: 100px;
-    background: #fff;
-    color: var(--orange);
-}
-#pricing-section .premium-plan .white-button:hover {
-    background: var(--orange);
-    color: #fff;
-    transition: ease 0.5s;
+/* 
+* Pricing Section
+*/
+#pricing-section .basic-plan {
+    color: var(--main);
 }
 #pricing-section .card-title {
     font-weight: 400;
 }
-#pricing-section .card-price {
+#pricing-section .price-title {
+    font-size: 1.2rem;
+}
+#pricing-section .basic-plan .price {
+    color: var(--pink);
     font-size: 4rem;
 }
-#pricing-section .period {
-    font-size: 1rem;
-}
 #pricing-section ul {
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
+} 
+#pricing-section .premium-plan {
+    background: var(--main);
+    color: #fff;
 }
-/*** End Pricing Section ***/
+#pricing-section .premium-plan .card-title {
+    color: #fff;
+    font-weight: 400;
+}
+#pricing-section hr {
+    background: #fff;
+}
+#pricing-section .premium-plan .price {
+    font-size: 4rem;
+}
+#pricing-section .premium-plan button.white-button {
+    background: #fff;
+    padding: .8rem 1.5rem;
+    border-radius: 90px;
+    color: var(--pink);
+}
+#pricing-section .premium-plan button.white-button:hover {
+    background: var(--pink);
+    color: #fff;
+    transition: ease 0.5s;
+}
+/* End Pricing Section */
 
 
-/*** Carousel Section ***/
+
+/* 
+*  Testimonials Section
+*/
 #testimonials-section {
-    background: #ece8ff93;   
+    background: url(../img/last-bg.png) no-repeat;
+    padding-top: 150px;
 }
-#testimonials-section .container {
-    padding: 100px;
-}
-.col-center {
-	margin: 0 auto;
-	float: none !important;
+#testimonials-section .col-center {
+    margin: 0 auto;
+    float: none!important;
 }
 .carousel {
-	margin: 50px auto;
-	padding: 0 70px;
+    margin-bottom: 170px;
+    padding: 0 35px;
 }
 .carousel .item {
-	color: #999;
-	font-size: 14px;
+    color: var(--main);
     text-align: center;
-	overflow: hidden;
+    overflow: hidden;
     min-height: 290px;
 }
 .carousel .item .img-box {
-	width: 135px;
-	height: 135px;
-	margin: 0 auto;
-	padding: 5px;
-	border: 1px solid var(--blue-light);
-	border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid var(--main-shade);
+    border-radius: 50%;
 }
 .carousel .img-box img {
-	width: 100%;
-	height: 100%;
-	display: block;
-	border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
 }
-.carousel .about-paragraph {
+.carousel p.about-paragraph {
     padding: 30px 0 10px;
-   
+    color: var(--darker);
 }
-.carousel .overview {	
-	font-style: italic;
+.carousel .overview {
+    font-style: italic;
+    color: var(--pink);
 }
 .carousel .overview b {
-	text-transform: uppercase;
-	color: var(--blue-dark);
+    text-transform: uppercase;
+    color: var(--main);
 }
 .carousel .carousel-control {
-	width: 40px;
+    width: 40px;
     height: 40px;
     margin-top: -20px;
     top: 50%;
-	background: none;
+    background: none;
 }
-.carousel-control i {
-    font-size: 50px;
-	line-height: 42px;
+.carousel .carousel-control i {
+    line-height: 42px; 
     position: absolute;
-    display: inline-block;
-	color: var(--orange);
+    display: inline;
+    color: var(--pink);
 }
 .carousel .carousel-indicators {
-	bottom: -40px;
+    bottom: -40px;
 }
-.carousel-indicators li, .carousel-indicators li.active {
-	width: 18px;
-	height: 0;
-    margin: 1px 3px;
+.carousel-indicators li,
+.carousel-indicators li.active {
+    box-shadow: none;
+    outline: none;
+    display: inline-block;
+    border-radius: 90px;
+    padding: 0;
+    margin: 0px 3px;
+    height: 10px;
+    width: 10px;
+    border: 1px solid var(--pink);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.carousel-indicators li {
+    background: #999;
+    border-color: transparent;
+}
+.carousel-indicators li.active {
+    background: var(--pink);
+}
+#call-card {
+    margin: -6.5rem 0;
+    padding: 0;
+}
+/* End Testimonials Section */
+
+
+/* 
+* Footer Section
+*/
+#footer-section {
+    background: var(--main);
+    color: #fff;
+    padding-bottom: 10px;
+}
+#footer-section .page-content-links h4 {
+    margin-bottom: 20px;
+}
+#footer-section .page-content-links li a {
+    color: #fff;
+}
+#footer-section .page-content-links .list-unstyled li {
+    display: flex;
+    margin-bottom: 25px;
+}
+#footer-section .list-unstyled i {
+    background: var(--pink);
+    line-height: 45px;
+    height: 45px;
+    width: 45px;
+    font-size: 18px;
+    text-align: center;
     border-radius: 90px;
 }
-.carousel-indicators li {	
-	background: #999;
-	border-color: transparent;
-    box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+#footer-section .list-unstyled span {
+    margin-top: 10px;
+    margin-left: 10px;
 }
-.carousel-indicators li.active {	
-	background: var(--orange);		
-	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+#footer-section .social-icons ul {
+    margin: .5rem;
 }
-/*** End Carousel Section ***/
-
-
-/*** Call Section ***/
-.call-section .row {
-    display: inline-block;
-    margin: 0;
-    margin-top: -250px;
-    background: olive;
+#footer-section .footer-copyright {
+    font-size: 14px;
 }
-.call-section .container {
-    
-    
-}
+/* End Footer Section */
 
 
-/*** End Call Section ***/
 
-
-/*** Footer Section ***/
-#footer-section {
-    background: var(--blue);
-    padding: 100px;
-}
-
-.map-container-5{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+@media (min-width: 768px) {
+    #site-banner .banner-title {
+        padding-top: 15%;
     }
-    .map-container-5 iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+    #how-works .card .icon {
+        text-align: center;
     }
-/*** Footer Section ***/
+    #how-works .col-lg-12,
+    #features-section .col-lg-12,
+    #testimonials-section .col-lg-12 {
+        text-align: center;
+    }
+    .carousel {
+        padding: 0 70px;
+    }
+    #pricing-section .card {
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+}
+
+@media (min-width: 992px) {
+    #header-section .main-header .navbar-nav a {
+        padding-right: 1.2rem;
+    }
+    #banner-bg {
+        background: url(../img/main-bg.png);
+        min-height: 880px;
+    }
+    #site-banner .banner-title h1 {
+        font-size: 6.25rem;
+    }
+    #site-banner .banner-img {
+        display: contents;
+    }
+    #site-banner .banner-img img {
+        padding-top: 5%;
+    }
+    #site-banner .small-screen-img {
+        display: none;
+    }
+    #about-section {
+        background: url(../img/first-bg.png) no-repeat;
+        width: 100%;
+    }
+ }
+
+ @media (min-width: 1200px) { 
+    .container-fluid {
+       max-width: 1200px;
+    }
+ }
