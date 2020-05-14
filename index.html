@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
-    <link rel="icon" href="./img/chat.png">
+    <link rel="icon" href="./img/d.png">
 
     <!-- Bootstrap CSS file -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
 
-    <!-- Fontawesome CSS file -->
+    <!-- FontAwesome CSS file -->
     <link rel="stylesheet" href="./css/all.min.css">
 
     <!-- Google Fonts -->
@@ -22,108 +22,100 @@
 
 <body>
 
-    <!---------------------------- Navegation ---------------------------->
-    <div class="bg">
+    <!-- Banner Background -->
+    <div id="banner-bg">
+        <!-- ================== Navegation ================== -->
         <header id="header-section">
-            <div class="main-menu">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container">
-                        <a class="navbar-brand" href="#">
-                            <img src="./img/chatbot.png" width="70" height="70" alt="logo">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#about">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#features">Features</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#pricing">Pricing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-btn" href="#contact">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
+            <div class="main-header container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="#"><img src="./img/pollo-logo.png" width="90" height="75"
+                            alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="#">Home<span
+                                        class="sr-only">(current)</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link pink-btn" href="#contact">Contact</a></li>
+                        </ul>
                     </div>
                 </nav>
             </div>
         </header>
+        <!-- ================== End Navegation ================== -->
 
-        <!---------------------------- End Navegation ---------------------------->
-
-        <!---------------------------- Main Section ---------------------------->
-        <main class="site-main">
-
-            <!---------------------------- Banner Section ---------------------------->
-            <section class="site-banner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 site-title m-auto">
+        <!-- Main Section -->
+        <main id="site-main">
+            <!-- ================== Banner Section ================== -->
+            <section id="site-banner">
+                <div class="container-fluid">
+                    <div class="row pl-4">
+                        <div class="col-lg-6 col-md-12 banner-title">
                             <h3>Meet the Master</h3>
                             <h1>Chatbot</h1>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, asperiores!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, enim!</p>
                             <div class="site-buttons">
                                 <div class="d-flex flex-row flex-wrap">
                                     <button type="button" class="btn button primary-button mr-4">
-                                        <i class="fas fa-play"></i>
-                                    </button>
-                                    <button type="button" class="btn button orange-button">Read more</button>
+                                        <i class="fas fa-play"></i></button>
+                                    <button type="button" class="btn button pink-button">Read more</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col.md-12 banner-img">
-                            <img src="./img/phone.png" alt="phone-img" class="img-fluid ml-auto d-block">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="banner-img">
+                                <img src="./img/main-phone.png" alt="phone-img" class="img-fluid ml-auto d-block">
+                            </div>
+                            <div class="small-screen-img">
+                            <img src="./img/small-img.png" alt="logo-img" class="img-fluid mx-auto d-block py-5">
+                        </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!---------------------------- End Banner Section ---------------------------->
-    </div>
-    <!-- End Banner image -->
+            <!-- ================== End Banner Section ================== -->
+        </main><!-- End Main Section -->
+    </div> <!-- End Banner Background -->
 
-    <!---------------------------- Card Section ---------------------------->
+
+    <!-- ================== Main Card Section ================== -->
     <section id="card-section">
-        <div class="container">
+        <div class="container-fluid spacing">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card text-center">
+                    <div class="card text-center my-2">
                         <div class="card-body">
-                            <i class="fab fa-simplybuilt fa-5x"></i>
+                            <i class="fab fa-simplybuilt fa-5x pb-4"></i>
                             <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
+                            <p class="card-text">With supporting text below as a natural lead-in
+                                to additional content.</p>
                             <a href="#">Read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card text-center">
+                    <div class="card text-center my-2">
                         <div class="card-body">
-                            <i class="fab fa-google fa-5x"></i>
+                            <i class="fab fa-simplybuilt fa-5x pb-4"></i>
                             <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
+                            <p class="card-text">With supporting text below as a natural lead-in
+                                to additional content.</p>
                             <a href="#">Read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card text-center">
+                    <div class="card text-center my-2">
                         <div class="card-body">
-                            <i class="fab fa-aws fa-5x"></i>
+                            <i class="fab fa-simplybuilt fa-5x pb-4"></i>
                             <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
+                            <p class="card-text">With supporting text below as a natural lead-in
+                                to additional content.</p>
                             <a href="#">Read more</a>
                         </div>
                     </div>
@@ -131,119 +123,120 @@
             </div>
         </div>
     </section>
-    <!---------------------------- End Card Section ---------------------------->
-    </main>
-    <!---------------------------- End Main Section ---------------------------->
+    <!-- ================== End Main Card Section ================== -->
 
 
-    <!---------------------------- About Section ---------------------------->
+    <!-- ================== About Section ================== -->
     <section id="about-section">
-        <div class="container">
+        <div class="container-fluid spacing">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
-                    <img class="mx-auto d-block img-fluid" src="./img/phone.png" alt="phone-img">
+                    <img src="./img/phone-two.png" alt="phone-image" class="mx-auto d-block img-fluid">
                 </div>
-                <div class="col-lg-6 col-md-12 m-auto">
-                    <h6 class="small-title">About Us</h6>
-                    <h1 class="main-title">What is PoLLo?</h1>
-                    <p class="about-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-                        voluptate laborum necessitatibus possimus tempore fugit quia odit vitae nam autem provident
-                        eaque laudantium, quasi soluta.</p>
-                    <h4 class="title-profession pt-4">Maximo Ferreira</h4>
-                    <p class="title-profession pb-4">Founder</p>
-                    <button type="button" class="btn button orange-button">View more</button>
+                <div class="col-lg-6 col-md-12 m-auto pl-5">
+                    <h6 class="small-title">About us</h6>
+                    <h1 class="main-title">What is Pollo?</h1>
+                    <p class="gray-text pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                        blanditiis itaque quas cumque nemo soluta!</p>
+                    <div class="row mt-5">
+                        <div class=" col-md-6 ">
+                            <h4 class="profession-title">Maximo Ferreira</h4>
+                            <p class="profession-title">CEO</p>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn button pink-button">View more</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
-    <!---------------------------- End About Section ---------------------------->
+    <!-- ================== End About Section ================== -->
 
 
-    <!---------------------------- How Works Section ---------------------------->
+    <!-- ================== How Works Section ================== -->
     <section id="how-works">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center my-5">
+        <div class="container-fluid spacing">
+            <div class="row pl-4">
+                <div class="col-lg-12 mb-5">
                     <h6 class="small-title">What we do</h6>
-                    <h1 class="main-title">How does PoLLo work?</h1>
+                    <h1 class="main-title">How does Pollo work?</h1>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-lg-6 col-md-12 m-auto">
-
+                    <!-- First Card -->
                     <div class="col-lg-12">
-                        <div class="card p-4 mb-4">
+                        <div class="card p-4 my-2">
                             <div class="row">
-                                <div class="col-md-2 m-auto text-center">
+                                <div class="col-md-2 m-auto icon">
                                     <i class="fas fa-paper-plane fa-3x"></i>
                                 </div>
-                                <div class="col-md-10 px-3">
-                                    <div class="card-block px-3">
-                                        <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and
-                                            makeup</p>
+                                <div class="col-md-10 py-2 text-left">
+                                    <div class="card-block">
+                                        <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Ab, obcaecati!</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <!-- Second Card -->
                     <div class="col-lg-12">
-                        <div class="card p-4 mb-4">
+                        <div class="card p-4 my-2">
                             <div class="row">
-                                <div class="col-md-2 m-auto text-center">
+                                <div class="col-md-2 m-auto icon">
                                     <i class="fas fa-thumbs-up fa-3x"></i>
                                 </div>
-                                <div class="col-md-10 px-3">
-                                    <div class="card-block px-3">
-                                        <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and
-                                            makeup</p>
+                                <div class="col-md-10 py-2 text-left">
+                                    <div class="card-block">
+                                        <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Ab, obcaecati!</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <!-- Third Card -->
                     <div class="col-lg-12">
-                        <div class="card p-4 mb-4">
+                        <div class="card p-4 my-2">
                             <div class="row">
-                                <div class="col-md-2 m-auto text-center">
+                                <div class="col-md-2 m-auto icon">
                                     <i class="fas fa-shapes fa-3x"></i>
                                 </div>
-                                <div class="col-md-10 px-3">
-                                    <div class="card-block px-3">
-                                        <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and
-                                            makeup</p>
+                                <div class="col-md-10 py-2 text-left">
+                                    <div class="card-block">
+                                        <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Ab, obcaecati!</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                </div>
+                </div><!-- End Column-->
+                <!-- Image Column -->
                 <div class="col-lg-6 col-md-12">
-                    <img class="img-fluid" src="./img/phone-two.png" alt="phone-illustration">
+                    <img class="img-fluid" src="./img/main-phone.png" alt="Phone Image">
                 </div>
-            </div>
+            </div><!-- End Row -->
         </div>
     </section>
+    <!-- ================== End How Works Section ================== -->
 
-    <!---------------------------- How Works Section ---------------------------->
 
-
-    <!---------------------------- Features Section ---------------------------->
+    <!-- ================== Feature Section ================== -->
     <section id="features-section">
-        <div class="container">
+        <div class="container-fluid spacing">
             <div class="row">
-                <div class="col-lg-12 text-center my-5">
+                <div class="col-lg-12 mb-5 pl-4">
                     <h6 class="small-title">Features</h6>
                     <h1 class="main-title">Our core features</h1>
                 </div>
-
-                <div class="col-lg-3 col-md-6 d-flex">
+                <div class="col-lg-3 col-md-6">
                     <div class="card mb-4">
                         <div class="card-body">
                             <i class="fas fa-check fa-3x"></i>
@@ -253,7 +246,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 d-flex">
+                <div class="col-lg-3 col-md-6">
                     <div class="card mb-4">
                         <div class="card-body">
                             <i class="fas fa-brain fa-3x"></i>
@@ -263,7 +256,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 d-flex">
+                <div class="col-lg-3 col-md-6">
                     <div class="card mb-4">
                         <div class="card-body">
                             <i class="far fa-id-card fa-3x"></i>
@@ -273,7 +266,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 d-flex">
+                <div class="col-lg-3 col-md-6">
                     <div class="card mb-4">
                         <div class="card-body">
                             <i class="fas fa-mobile-alt fa-3x"></i>
@@ -286,74 +279,69 @@
             </div>
         </div>
     </section>
-    <!---------------------------- End Features Section ---------------------------->
+    <!-- ================== End Feature Section ================== -->
 
-    <!---------------------------- Pricing Section ---------------------------->
+
+    <!-- ================== Pricing Section ================== -->
     <section id="pricing-section">
-        <div class="container">
+        <div class="container-fluid spacing">
             <div class="row">
-                <div class="col-lg-6 m-auto">
+                <div class="col-lg-6 m-auto pl-5">
                     <h6 class="small-title">Pricing</h6>
                     <h1 class="main-title">Pricing plans & options</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus amet molestiae dignissimos
-                        voluptatibus quod iusto? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus aut
-                        incidunt dolorem ut totam officia!</p>
-                    <button type="button" class="btn button orange-button">View all plans</button>
+                    <p class="gray-text pt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium,
+                        delectus nihil magni aut
+                        accusantium cupiditate optio fugit necessitatibus illum ducimus.</p>
+                    <button class="btn button blue-button">View all plans</button>
                 </div>
-
-                <div class="col-lg-3 col-md-12 m-auto p-0">
-                    <div class="card py-4 basic-plan">
+                <div class="col-lg-3 col-md-6 m-auto py-2 p-0">
+                    <div class="card py-4 basic-plan mx-4">
                         <div class="card-body text-center">
                             <h6 class="card-title">Basic Plan</h6>
-                            <h1 class="card-price">$49<span class="period">/month</span></h1>
+                            <h1 class="price-title"><span class="price">$49</span>/month</h1>
                             <hr>
-                            <ul class="fa-ul text-left my-5">
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>5 chatbot</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>250 subscribers</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                            <ul class="my-4">
+                                <li>5 chatbot</li>
+                                <li>5GB storage</li>
+                                <li>250 subscribers</li>
                             </ul>
-                            <button type="button" class="btn button orange-button">Get started</button>
+                            <button class="btn button pink2-button">Get started</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-12 m-auto p-0">
-                    <div class="card py-4 premium-plan">
+                <div class="col-lg-3 col-md-6 m-auto py-2 p-0">
+                    <div class="card py-4 premium-plan mx-4">
                         <div class="card-body text-center">
                             <h6 class="card-title">Premium Plan</h6>
-                            <h1 class="card-price">$99<span class="period">/month</span></h1>
+                            <h1 class="price-title"><span class="price">$99</span>/month</h1>
                             <hr>
-                            <ul class="fa-ul text-left my-5">
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>5 chatbot</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>250 subscribers</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Internal support</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Other stuff</li>
+                            <ul class="my-4">
+                                <li>5 chatbot</li>
+                                <li>5GB storage</li>
+                                <li>250 subscribers</li>
+                                <li>Community access</li>
+                                <li>Internal support</li>
+                                <li>Other</li>
                             </ul>
-                            <button type="button" class="btn button white-button">Get started</button>
+                            <button class="btn button white-button">Get started</button>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-    <!---------------------------- End Pricing Section ---------------------------->
+    <!-- ================== End Pricing Section ================== -->
 
 
-    <!---------------------------- Testimonials Section ---------------------------->
-
+    <!-- ================== Testimonials Section ================== -->
     <section id="testimonials-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 text-center my-5">
+                <div class="col-lg-12 mb-5 pl-5">
                     <h6 class="small-title">Testimonials</h6>
                     <h1 class="main-title">Our customers say</h1>
                 </div>
-
                 <div class="col-md-12 col-center m-auto">
-
                     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                         <!-- Carousel indicators -->
                         <ol class="carousel-indicators">
@@ -361,6 +349,7 @@
                             <li data-target="#myCarousel" data-slide-to="1"></li>
                             <li data-target="#myCarousel" data-slide-to="2"></li>
                         </ol>
+
                         <!-- Wrapper for carousel items -->
                         <div class="carousel-inner">
                             <div class="item carousel-item active">
@@ -369,7 +358,7 @@
                                     eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis
                                     vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse
                                     varius nibh non aliquet.</p>
-                                <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+                                <p class="overview"><b>Paula Wilson,</b> Media Analyst</p>
                             </div>
                             <div class="item carousel-item">
                                 <div class="img-box"><img src="https://picsum.photos/200/300?random=3" alt=""></div>
@@ -390,98 +379,113 @@
                         </div>
                         <!-- Carousel controls -->
                         <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
-                            <i class="fas fa-chevron-left"></i>
+                            <i class="fas fa-chevron-left fa-2x"></i>
                         </a>
                         <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
-                            <i class="fas fa-chevron-right fa-4x"></i>
+                            <i class="fas fa-chevron-right fa-2x"></i>
                         </a>
-
                     </div>
                 </div>
-
-
             </div>
-    </section>
-
-    <!---------------------------- End Testimonials Section ---------------------------->
-
-    <!---------------------------- Call Section ---------------------------->
-    <div class="call-section">
-        <div class="container">
+            <!-- ================== Call Section ================== -->
             <div class="row">
-                <div class="col-lg-12 text-center my-5 test">
-                    <h1 class="main-title">Ready to get started?</h1>
-                    <p class="about-paragraph p-0">Get in touch or create an account</p>
+                <div class="col-lg-10 mx-auto px-0">
+                    <div id="call-card" class="row text-center">
+                        <div class="col-lg-12">
+                            <div class="card shadow">
+                                <div class="card-body d-flex flex-column align-items-center py-4">
+                                    <h1 class="main-title">Ready to get started?</h1>
+                                    <p class="card-text pb-3">Lorem ipsum dolor sit amet consectetur</p>
+                                    <div class="site-buttons">
+                                        <div class=" flex-row flex-wrap">
+                                            <button class="btn button pink2-button mt-3 mr-sm-4">Request a demo</button>
+                                            <button class="btn button blue-button mt-3">Buy now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ================== End Call Section ================== -->
+        </div>
+    </section>
+    <!-- ================== End Testimonials Section ================== -->
 
-                    <button type="button" class="btn button orange-button primary-button mr-4">
-                        Request a demo
-                    </button>
-                    <button type="button" class="btn button blue-button">Buy now</button>
 
+    <!-- ================== Footer Section ================== -->
+    <footer id="footer-section">
+        <div class="container-fluid spacing text-left">
+            <div class="row pl-2">
+                <div class="col-md-6 mt-5 page-content-links">
+                    <h4 class="text-uppercase">Footer Content</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-3 mt-5 page-content-links">
+                    <h4 class="text-uppercase">Integration</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Pricing plans</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mt-5 page-content-links">
+                    <h4 class="text-uppercase">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone"></i><span>021 000 000</span></li>
+                        <li><i class="fas fa-envelope"></i><span>pollo@gmail.com</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i><span>Tauranga, New Zealand</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <!---------------------------- End Call Section ---------------------------->
-
-    <!---------------------------- Footer Section ---------------------------->
-    <footer id="footer-section">
-        <div class="container">
+        <hr style="background: #fff;">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
-
-                    <div class="d-flex">
-                        <div class="col-lg-6">
-                            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-                            <ul class="list-unstyled">
-                                <li><a href="#!">About</a></li>
-                                <li><a href="#!">Features</a></li>
-                                <li><a href="#!">Pricing</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Quick contact</h5>
-
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-phone fa-2x m-auto p-2"></i><a href="#!">Very long link 1</a></li>
-                                <li><i class="fas fa-envelope fa-2x m-auto p-2"></i><a href="#!">Very long link 1</a>
-                                </li>
-                                <li><i class="fas fa-map-marker-alt fa-2x m-auto p-2" style="width: 48px;"></i><a
-                                        href="#!">Very long link 1</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col">
-                            <ul class="list-unstyled list-inline text-center py-2">
-                                <li class="list-inline-item">
-                                    <h5 class="mb-1">Register for free</h5>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#!" class="btn btn-outline-white btn-rounded">Sign up!</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Call to action -->
+                <div class="col-lg-6 social-icons my-auto">
+                    <ul class="list-unstyled d-flex flex-row flex-wrap text-center">
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-fb">
+                                <i class="fab fa-facebook-f"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-tw mx-1">
+                                <i class="fab fa-twitter"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-gplus mx-1">
+                                <i class="fab fa-google-plus-g"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-li mx-1">
+                                <i class="fab fa-linkedin-in"> </i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
+                <div class="col-lg-6 my-auto">
+                    <div class="footer-copyright text-right">© 2020 made by
+                        <a href="https://cunhapaola.github.io/PortfolioC/"> Cunha</a></div>
+                </div>
             </div>
+        </div>
     </footer>
-
-    <!---------------------------- End Footer Section ---------------------------->
-
+    <!-- ================== End Footer Section ================== -->
 
 
 
 
 
     <script src="./js/jquery.3.4.1.js"></script>
-
     <script src="./js/bootstrap.min.js"></script>
+    <!-- Custom JS File -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
