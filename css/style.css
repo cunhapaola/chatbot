@@ -115,7 +115,7 @@ button.pink2-button {
 }
 #header-section nav .navbar-brand img {
     width: 65px;
-    height: 50;
+    height: 50px;
 }
 #header-section .main-header .navbar-nav a {
     color: var(--white);
@@ -405,7 +405,7 @@ button.pink2-button {
 @media (min-width: 768px) {
     #header-section nav .navbar-brand img {
         width: 80px;
-        height: 65;
+        height: 65px;
     }
     #site-banner .banner-title {
         padding-top: 15%;
