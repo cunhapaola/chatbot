@@ -4,7 +4,7 @@
     --main-shade: #6A2EEF;
     --darker: rgb(77, 77, 77);
     --turquoise: #4ae2e8;
-    --main-lighter: #a4fcff;
+    --main-lighter: #a4bcff;
     --white: #ffffff;
     --gray: #888888; 
 }
@@ -134,17 +134,18 @@ button.pink2-button {
 }
 #site-banner .banner-title h3 {
     font-weight: 400;
+    font-size: 1.5rem;
     color: var(--white);
 }
 #site-banner .banner-title h1 {
     color: var(--white);
-    font-size: 4.25rem;
+    font-size: 4rem;
 }
 #site-banner .banner-title p {
     color: var(--white);
 }
 #site-banner .banner-title {
-    padding-top: 30%;
+    padding-top: 20%;
 }
 #site-banner .banner-img {
    display: none;
@@ -207,7 +208,7 @@ button.pink2-button {
 }
 #features-section .card-body .card-title {
     text-decoration: underline;
-    text-decoration-color: var(--pink);
+    text-decoration-color: var(--turquoise);
 }
 /* End Feature Section */
 
